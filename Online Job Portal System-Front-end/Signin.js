@@ -1,33 +1,45 @@
-const form = document.getElementById("loginForm");
-const successBox = document.getElementById("successBox");
-const btnText = document.querySelector(".btn-text");
-const loader = document.querySelector(".loader");
-const eye = document.getElementById("toggleEye");
-const password = document.getElementById("password");
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Signin.js loaded ✅");
 
-/* Toggle password */
-eye.addEventListener("click", () => {
-  password.type = password.type === "password" ? "text" : "password";
-});
+  const form = document.getElementById("loginForm");
+  const successBox = document.getElementById("successBox");
+  const btnText = document.querySelector(".btn-text");
+  const loader = document.querySelector(".loader");
+  const eye = document.getElementById("toggleEye");
+  const password = document.getElementById("password");
 
-/* Login submit */
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  if (!form) {
+    console.error("Login form not found ❌");
+    return;
+  }
 
-  btnText.style.opacity = "0";
-  loader.style.display = "block";
+  /* Toggle password */
+  if (eye && password) {
+    eye.addEventListener("click", () => {
+      password.type = password.type === "password" ? "text" : "password";
+    });
+  }
 
-  setTimeout(() => {
-    // 🔥 SESSION SET (MOST IMPORTANT)
-    localStorage.setItem("isLoggedIn", "true");
-    localStorage.setItem("userRole", "recruiter");
+  /* Login submit */
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    console.log("LOGIN SUCCESS:", localStorage.getItem("isLoggedIn"));
-
-    successBox.style.display = "flex";
+    // Loader animation
+    if (btnText) btnText.style.opacity = "0";
+    if (loader) loader.style.display = "block";
 
     setTimeout(() => {
-      window.location.href = "recruitor-dashboard.html";
-    }, 2000);
-  }, 1200);
+      // 🔥 TEMP SESSION (FRONTEND ONLY)
+      localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("userRole", "recruiter");
+
+      console.log("LOGIN SUCCESS:", localStorage.getItem("isLoggedIn"));
+
+      if (successBox) successBox.style.display = "flex";
+
+      setTimeout(() => {
+        window.location.href = "recruitor-dashboard.html";
+      }, 1500);
+    }, 1200);
+  });
 });

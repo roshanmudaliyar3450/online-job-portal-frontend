@@ -34,6 +34,10 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+document.getElementById("loginBtn")
+  .addEventListener("click", function () {
+    alert("Login frontend validated");
+});
 
 
 });
