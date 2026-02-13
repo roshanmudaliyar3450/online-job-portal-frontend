@@ -1,0 +1,75 @@
+.dashboard {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dashboard h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* STATS */
+.dash-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.dash-card {
+  background: #ffffff;
+  width: 200px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.dash-card h3 {
+  font-size: 32px;
+  color: #4f46e5;
+}
+
+.dash-card p {
+  margin-top: 6px;
+  color: #475569;
+}
+
+/* ACTION CARDS */
+.dash-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.action-card {
+  background: #f8fafc;
+  width: 240px;
+  padding: 26px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #0f172a;
+  transition: 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.1);
+  background: #eef2ff;
+}
+
+.action-card h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.action-card p {
+  font-size: 14px;
+  color: #475569;
+}

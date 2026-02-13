@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Jobs | JobPortal</title>
+  <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo-icon">💼</div>
+    <span class="logo-text">JobPortal</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="jobs.html" class="active">Find Jobs</a>
+    <a href="signin.html" class="btn-outline">Login</a>
+    <a href="register.html" class="btn-primary">Sign Up</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="jobs-hero">
+  <h1>Find Your Next Job</h1>
+  <p>Browse verified jobs and apply instantly</p>
+
+  <div class="search-bar">
+    <input type="text" id="searchTitle" placeholder="Job title or keyword">
+    <input type="text" id="searchLocation" placeholder="Location">
+    <button onclick="filterJobs()">Search</button>
+  </div>
+</section>
+
+<!-- JOB LIST -->
+<section class="jobs-section">
+  <div id="jobsContainer" class="jobs-grid"></div>
+</section>
+
+<script src="jobs.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recruiter Dashboard | JobPortal</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="recruitor-dashboard.css">
+  <script src="recruitor-dashboard.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo-box">💼</div>
+    <span class="logo-text">JobPortal</span>
+  </div>
+
+  <nav class="nav-center">
+    <a href="recruitor-dashboard.html" class="active">Dashboard</a>
+    <a href="postjob.html">Post Job</a>
+    <a href="jobs.html">Jobs</a>
+  </nav>
+
+  <div class="nav-right">
+    <button class="nav-btn outline" onclick="location.href='postjob.html'">
+      Post Job
+    </button>
+    <button class="nav-btn solid" onclick="location.href='signin.html'">
+      Logout
+    </button>
+  </div>
+</header>
+
+
+
+
+<main class="dashboard">
+
+  <h2>Welcome, Recruiter 👋</h2>
+  <p class="subtitle">Manage your job postings and applicants</p>
+
+  <!-- STATS -->
+  <div class="dash-stats">
+    <div class="dash-card">
+      <h3>6</h3>
+      <p>Jobs Posted</p>
+    </div>
+
+    <div class="dash-card">
+      <h3>28</h3>
+      <p>Total Applications</p>
+    </div>
+
+    <div class="dash-card">
+      <h3>9</h3>
+      <p>Shortlisted</p>
+    </div>
+  </div>
+
+  <!-- ACTIONS -->
+  <div class="dash-actions">
+    <a href="post-job.html" class="action-card">
+      <h4>Post New Job</h4>
+      <p>Create and publish job openings</p>
+    </a>
+
+    <a href="#" class="action-card">
+      <h4>View Applicants</h4>
+      <p>Check candidates who applied</p>
+    </a>
+
+    <a href="#" class="action-card">
+      <h4>Manage Jobs</h4>
+      <p>Edit or close job listings</p>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Online Job Portal System</p>
+</footer>
+
+</body>
+</html>

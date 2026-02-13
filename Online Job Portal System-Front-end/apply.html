@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply Job | JobPortal</title>
+  <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">JobPortal</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Find Jobs</a>
+    <a href="Signin.html" class="btn">Login</a>
+  </nav>
+</header>
+
+<!-- APPLY CARD -->
+<div class="apply-wrapper">
+
+  <div class="apply-card">
+    <h1>Apply for Job</h1>
+    <p class="job-title" id="jobTitle">Frontend Developer</p>
+
+    <form id="applyForm">
+
+      <label>Full Name</label>
+      <input type="text" required placeholder="Enter your full name">
+
+      <label>Email Address</label>
+      <input type="email" required placeholder="Enter your email">
+
+      <label>Upload Resume</label>
+      <input type="file" required>
+
+      <label>Why should we hire you?</label>
+      <textarea rows="4" placeholder="Write a short message"></textarea>
+
+      <button type="submit" class="apply-btn">
+        <span class="btn-text">Submit Application</span>
+        <span class="loader"></span>
+      </button>
+
+    </form>
+  </div>
+
+</div>
+
+<!-- SUCCESS POPUP -->
+<div class="success-popup" id="successPopup">
+  <div class="success-card">
+    <div class="check">✔</div>
+    <h2>Application Submitted!</h2>
+    <p>We’ll contact you soon.</p>
+    <div class="spinner"></div>
+    <small>Redirecting to jobs...</small>
+  </div>
+</div>
+
+<script src="apply.js"></script>
+</body>
+</html>

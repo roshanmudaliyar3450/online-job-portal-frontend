@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account | JobPortal</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="register-wrapper">
+
+  <div class="register-card">
+    <h1>Create Account</h1>
+    <p class="subtitle">Join thousands of professionals finding their dream jobs</p>
+
+    <form id="registerForm">
+
+      <!-- Full Name -->
+      <label>Full Name *</label>
+      <div class="input-box">
+        <span>👤</span>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email -->
+      <label>Email Address *</label>
+      <div class="input-box">
+        <span>✉️</span>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password -->
+      <label>Password *</label>
+      <div class="input-box">
+        <span>🔒</span>
+        <input type="password" id="password" placeholder="Create a strong password" required>
+        <span class="eye" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <!-- Profile Picture -->
+      <label>Profile Picture (Optional)</label>
+      <div class="upload-box">
+        <div class="avatar">👤</div>
+        <label class="upload-btn">
+          Upload Photo
+          <input type="file" hidden>
+        </label>
+        <small>JPG, PNG up to 5MB</small>
+      </div>
+
+      <!-- Role -->
+      <label>I am a *</label>
+      <div class="role-box">
+        <div class="role-card active" data-role="seeker">
+          <span>👨‍💻</span>
+          <hRemember>Job Seeker</hRemember>
+          <p>Looking for opportunities</p>
+        </div>
+
+        <div class="role-card" data-role="employer">
+          <span>🏢</span>
+          <hRemember>Employer</hRemember>
+          <p>Hiring talent</p>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <button type="submit" class="create-btn">Create Account</button>
+
+      <p class="bottom-text">
+        Already have an account?
+        <a href="Signin.html">Sign in here</a>
+      </p>
+
+    </form>
+  </div>
+
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

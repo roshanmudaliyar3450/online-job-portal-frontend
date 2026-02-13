@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Details | JobPortal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="job-details.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <div class="logo-icon">💼</div>
+    <span class="logo-text">JobPortal</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="jobs.html" class="nav-btn active">Find Jobs</a>
+    <a href="signin.html" class="nav-btn-outline">Login</a>
+    <a href="register.html" class="nav-btn-primary">Sign Up</a>
+  </nav>
+</header>
+
+
+
+<!-- JOB DETAILS -->
+<section class="job-details">
+  <div class="job-card-lg">
+
+    <div class="job-header">
+      <h1 id="jobTitle">Job Title</h1>
+      <span class="badge" id="jobLevel">National</span>
+    </div>
+
+    <p class="company" id="companyName">Company Name</p>
+
+    <div class="job-meta">
+      <span>📍 <strong id="jobLocation"></strong></span>
+      <span>🕒 <strong id="jobType"></strong></span>
+    </div>
+
+    <hr>
+
+    <h3>Job Description</h3>
+    <p id="jobDescription">
+      We are looking for a passionate professional to join our growing team.
+      You will work on real-world projects and collaborate with experienced engineers.
+    </p>
+
+    <h3>Required Skills</h3>
+    <ul class="skills">
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+      <li>Problem Solving</li>
+      <li>Team Collaboration</li>
+    </ul>
+
+    <div class="action-buttons">
+      <button class="apply-btn" id="applyBtn">Apply Now</button>
+      <button class="save-btn" id="saveBtn">Save Job</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Online Job Portal System</p>
+</footer>
+
+<script src="job-details.js"></script>
+<!-- CUSTOM TOAST -->
+<div id="toast" class="toast">
+  <span id="toastMsg"></span>
+</div>
+ 
+</body>
+</html>

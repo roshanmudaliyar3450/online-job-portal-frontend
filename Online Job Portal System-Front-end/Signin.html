@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In | JobPortal</title>
+  <link rel="stylesheet" href="Signin.css">
+</head>
+<body>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Sign In Card -->
+  <div class="signin-container">
+    <h1>Welcome Back</h1>
+    <p class="subtitle">Sign in to your JobPortal account</p>
+
+    <form id="loginForm">
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Password</label>
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <span class="eye" id="toggleEye">👁️</span>
+      </div>
+
+      <button type="submit" class="signin-btn">
+        <span class="btn-text">Sign In</span>
+        <span class="loader"></span>
+      </button>
+
+    </form>
+
+    <p class="bottom-text">
+      Don’t have an account?
+      <a href="register.html">Create one here</a>
+    </p>
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="success-popup" id="successBox">
+    <div class="success-card">
+      <div class="check">✔</div>
+      <h2>Welcome Back!</h2>
+      <p>You have been successfully logged in.</p>
+      <div class="spinner"></div>
+      <small>Redirecting to dashboard...</small>
+    </div>
+  </div>
+
+  <script src="Signin.js"></script>
+</body>
+</html>
